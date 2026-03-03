@@ -8,8 +8,8 @@ function App() {
     <>
       <Header />
       <main>
-        {data.map((el) => {
-          return <Section name={el.category} movies={el.images} />;
+        {data.map((el, index) => {
+          return <Section key={index} name={el.category} movies={el.images} />;
         })}
       </main>
     </>

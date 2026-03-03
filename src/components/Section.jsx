@@ -5,8 +5,8 @@ const Section = ({ name, movies }) => {
     <section>
       <Title name={name} />
       <div className="carousel">
-        {movies.map((img) => {
-          return <img src={img} />;
+        {movies.map((img, index) => {
+          return <img key={index} src={img} />;
         })}
       </div>
     </section>
