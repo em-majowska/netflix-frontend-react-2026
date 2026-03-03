@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+body {
+  background-color: black;
+  color: white;
+  padding-inline-start: 64px;
+  font-family: "Roboto", "Arial", "sans-serif";
+}
+
+.logo {
+  width: 100px;
+}
+
+h2 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-block-end: 20px;
+}
+
+main {
+  min-height: calc(100vh - 100px);
+}
+
+section {
+  margin-block-end: 40px;
+}
+
+.carousel {
+  display: flex;
+  height: 125px;
+  max-width: 100%;
+  overflow-x: scroll;
+}
+
+.carousel::-webkit-scrollbar {
+  display: none;
+}
+
+.carousel {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
